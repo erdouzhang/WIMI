@@ -1,0 +1,240 @@
+/*顶部通栏*/
+#header .topbar {
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
+.navbar-default {
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+}
+#header .nav,
+#header .row {
+    margin-top: 0;
+}
+#header a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+#header .btn {
+  padding: 8px 30px;
+  margin-top: 10px;
+}
+
+.box {
+  margin-top:0;
+}
+.row {
+  margin-top: 15px;
+}
+/*表单*/
+form {
+  margin-top:40px;
+}
+form .form-group {
+    padding: 6px 0;
+    border: 1px solid #B3B3B3;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    margin-left: 0;
+}
+.form-horizontal .form-group {
+    margin-left: 0;
+}
+form .form-group label {
+  color: #66666F;
+}
+form .form-group .form-control {
+  border: none;
+  box-shadow: none;
+  color: #555555;
+}
+form .form-group:hover {
+    border: 1px solid #00B8A9;
+}
+/*选项卡*/
+.nav {
+  margin-top: 40px;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #07A3A5;
+}
+.nav > li > a {
+    padding: 10px 28px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.nav > li > a:hover{
+    color: #07A3A5;
+}
+a {
+    color: #07A3A5;
+    text-decoration: none;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #fff;
+}
+/*面板*/
+#pan2 label {
+  padding: 7px 0 0 0;
+}
+#pan2 .col-md-6 {
+  padding-right: 100px;
+}
+#pan2 h4 {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+#pan2 form {
+  margin-top: 24px;
+}
+#pan3 table {
+  margin: 50px 0;
+}
+#pan4 .pan4-serv {
+  margin-left: 57px;
+}
+/*多选框*/
+.onoffswitch {
+    position: relative;
+    width: 80px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 20px; padding: 0; line-height: 20px;
+    border: 2px solid #FFFFFF; border-radius: 20px;
+    background-color: #9E9E9E;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 20px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom:4px;
+    right: 44px;
+    border: 2px solid #07A3A5; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #07A3A5;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #07A3A5;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 14px;
+}
+
+/*按钮*/
+.btn-lg, .btn-group-lg > .btn {
+    padding: 10px 50px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    margin-top: 50px;
+}
+/*刷新按钮*/
+.btn-refash {
+  color: #ffffff;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+  margin-right: 25px;
+}
+
+.btn-refash:hover,
+.btn-refash:focus,
+.btn-refash:active,
+.btn-refash.active,
+.open .dropdown-toggle.btn-refash {
+  color: #ffffff;
+  background-color: #1A242E;
+  border-color: #2C3E50;
+}
+
+.btn-refash:active,
+.btn-refash.active,
+.open .dropdown-toggle.btn-refash {
+  background-image: none;
+}
+
+.btn-refash.disabled,
+.btn-refash[disabled],
+fieldset[disabled] .btn-refash,
+.btn-refash.disabled:hover,
+.btn-refash[disabled]:hover,
+fieldset[disabled] .btn-refash:hover,
+.btn-refash.disabled:focus,
+.btn-refash[disabled]:focus,
+fieldset[disabled] .btn-refash:focus,
+.btn-refash.disabled:active,
+.btn-refash[disabled]:active,
+fieldset[disabled] .btn-refash:active,
+.btn-refash.disabled.active,
+.btn-refash[disabled].active,
+fieldset[disabled] .btn-refash.active {
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
+
+.btn-refash .badge {
+  color: #2C3E50;
+  background-color: #ffffff;
+}
+
+/*保存按钮*/
+.btn-save {
+  color: #ffffff;
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+}
+
+.btn-save:hover,
+.btn-save:focus,
+.btn-save:active,
+.btn-save.active,
+.open .dropdown-toggle.btn-save {
+  color: #ffffff;
+  background-color: #128F76;
+  border-color: #18BC9C;
+}
+
+.btn-save:active,
+.btn-save.active,
+.open .dropdown-toggle.btn-save {
+  background-image: none;
+}
+
+.btn-save.disabled,
+.btn-save[disabled],
+fieldset[disabled] .btn-save,
+.btn-save.disabled:hover,
+.btn-save[disabled]:hover,
+fieldset[disabled] .btn-save:hover,
+.btn-save.disabled:focus,
+.btn-save[disabled]:focus,
+fieldset[disabled] .btn-save:focus,
+.btn-save.disabled:active,
+.btn-save[disabled]:active,
+fieldset[disabled] .btn-save:active,
+.btn-save.disabled.active,
+.btn-save[disabled].active,
+fieldset[disabled] .btn-save.active {
+  background-color: #18BC9C;
+  border-color: #18BC9C;
+}
+
+.btn-save .badge {
+  color: #18BC9C;
+  background-color: #ffffff;
+}

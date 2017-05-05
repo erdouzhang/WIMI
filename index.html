@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+	<!-- 设置当前html文件字符编码 -->
+	<meta charset="utf-8">
+	<!-- 设置浏览器兼容模式版本 让IE使用最新的渲染引擎工作 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 声明当前网页在移动端浏览器中展示的相关设置 user-scalable=no不允许用户缩放 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+	<title>WIMI智能制造</title>
+	<!-- 引入Bootstrap核心的样式表文件 -->
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="lib/animate/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="lib/jquery/jquery.js"></script>
+	<script src="lib/bootstrap/js/bootstrap.js"></script>
+	<script src="lib/animate/wow.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- html5shiv让浏览器可以识别html5新标签 -->
+	<!-- respond.js 让低版本浏览器可以使用css3的媒体查询-->
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--  条件注释 -->
+	<!--[if lt IE 9]>
+	<script src="lib/html5shiv/html5shiv.min.js"></script>
+	<script src="lib/respond/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="header">
+		<div class="topbar">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="navbar navbar-default">
+							<div class="navbar-header">
+								<a href="#" class="navbar-brand">E3230配置</a>
+							</div>
+							<button type="button" class="btn btn-danger pull-right">重置</button>
+						</nav>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container box">
+		<div class="row">
+			<!-- tab选项卡 -->
+			<div class="col-md-2">
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#pan1" data-toggle="tab">驱动配置</a></li>
+					<li class="nav-divider"></li>
+					<li><a href="#pan2" data-toggle="tab">基础配置</a></li>
+					<li class="nav-divider"></li>
+					<li><a href="#pan3" data-toggle="tab">采集项配置</a></li>
+					<li class="nav-divider"></li>
+					<li><a href="#pan4" data-toggle="tab">ALP配置</a></li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+				<!-- 面板 -->
+				<div class="tab-content">
+					<!-- 驱动配置 开始-->
+					<div class="tab-pane active  wow fadeIn" id="pan1">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="inputText1" class="col-sm-2 control-label">硬件 ID</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputText1" placeholder="请输入硬件ID">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="selectText2" class="col-sm-2 control-label">选择驱动</label>
+								<div class="col-sm-10">
+									<select class="form-control" id="selectText2">
+								 	<option value=""></option>
+								 </select>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputText3" class="col-sm-2 control-label">IP</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputText3" placeholder="请输入IP地址">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputText4" class="col-sm-2 control-label">端口</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputText4" placeholder="请输入端口号">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputText5" class="col-sm-2 control-label">扫描周期</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputText5" placeholder="请输入扫描周期">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputText6" class="col-sm-2 control-label">超时</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputText6" placeholder="请输入超时">
+								</div>
+							</div>
+							<div class="col-md-9 col-md-offset-3">
+								<button type="button" class="btn btn-refash btn-lg">刷新</button>
+								<button type="button" class="btn btn-save btn-lg">保存</button>
+							</div>
+						</form>
+					</div>
+					<!-- 驱动配置 结束-->
+					<!-- 基础配置 开始-->
+					<div class="tab-pane wow fadeIn" id="pan2">
+						<div class="col-md-6">
+							<h4>以太网1</h4>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="pan2-1" class="col-sm-2 control-label">IP</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-1" placeholder="请输入IP">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-2" class="col-sm-2 control-label">镜像IP</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-2" placeholder="请输入镜像IP">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-3" class="col-sm-2 control-label">子网掩码</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-3" placeholder="请输入子网掩码">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-4" class="col-sm-2 control-label">网关</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-4" placeholder="请输入网关">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-5" class="col-sm-2 control-label">mac地址</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-5" placeholder="请输入mac地址">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6">
+							<h4>以太网2</h4>
+							<form class="form-horizontal">
+								<div class="form-group">
+									<label for="pan2-6" class="col-sm-2 control-label">IP</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-6" placeholder="请输入IP">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-7" class="col-sm-2 control-label">镜像IP</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-7" placeholder="请输入镜像IP">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-8" class="col-sm-2 control-label">子网掩码</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-8" placeholder="请输入子网掩码">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-9" class="col-sm-2 control-label">网关</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-9" placeholder="请输入网关">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="pan2-10" class="col-sm-2 control-label">mac地址</label>
+									<div class="col-sm-10">
+										<input type="text" class="form-control" id="pan2-10" placeholder="请输入mac地址">
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-9 col-md-offset-3">
+							<button type="button" class="btn btn-refash btn-lg">获取本机配置</button>
+							<button type="button" class="btn btn-save btn-lg" style="margin-right:25px;">新增</button>
+							<button type="button" class="btn btn-save btn-lg">保存</button>
+						</div>
+					</div>
+					<!-- 基础配置 结束-->
+					<!-- 采集项配置 开始 -->
+					<div class="tab-pane wow fadeIn" id="pan3">
+						<table class="table table-bordered table-striped table-hover">
+							<tr>
+								<th>ID</th>
+								<th>名称</th>
+								<th>数据类型</th>
+								<th>数据长度</th>
+								<th>地址</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>张三</td>
+								<td>张三</td>
+								<td>张三</td>
+								<td>张三</td>
+								<td>张三</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>李四</td>
+								<td>李四</td>
+								<td>李四</td>
+								<td>李四</td>
+								<td>李四</td>
+							</tr>
+						</table>
+						<div class="col-md-9 col-md-offset-3">
+							<button type="button" class="btn btn-refash btn-lg">刷新</button>
+							<button type="button" class="btn btn-save btn-lg">保存</button>
+						</div>
+					</div>
+					<!-- 采集项配置 结束 -->
+					<!-- ALP配置 开始 -->
+					<div class="tab-pane wow fadeIn" id="pan4">
+						<form class="form-horizontal">
+							<div class="form-group">
+								<label for="pan4-1" class="col-sm-2 control-label">连接类型</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-1" placeholder="请输入链接类型">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<div class="pan4-serv">
+											<label for="pan4-2-1" class="col-sm-3 control-label">服务器地址</label>
+											<div class="col-sm-9">
+												<input type="text" class="form-control" id="pan4-2-1" placeholder="请输入服务器地址">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="pan4-2-2" class="col-sm-3 control-label">端口</label>
+										<div class="col-sm-9">
+											<input type="text" class="form-control" id="pan4-2-2" placeholder="请输入端口号">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="pan4-3" class="col-sm-2 control-label">重连周期（ms）</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-3" placeholder="请输入重连周期（ms）">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="pan4-4" class="col-sm-2 control-label">用户名</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-4" placeholder="请输入用户名">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="pan4-5" class="col-sm-2 control-label">密码</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-5" placeholder="请输入密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="pan4-6" class="col-sm-2 control-label">确认密码</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-6" placeholder="再次输入密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="pan4-7" class="col-sm-2 control-label">心跳频率（ms）</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-7" placeholder="请输入心跳频率（ms）">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="pan4-8" class="col-sm-2 control-label">监听端口</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-8" placeholder="请输入监听端口">
+								</div>
+							</div>
+							<div class="form-group">
+
+								<label for="pan4-9" class="col-sm-2 control-label">透明转发</label>
+								<!-- <div class="col-sm-10"> -->
+									<div class="onoffswitch col-sm-10" id="pan4-9">
+										<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+										<label class="onoffswitch-label" for="myonoffswitch"></label>
+									</div>
+								<!-- </div> -->
+							</div>
+							<div class="form-group">
+								<label for="pan4-10" class="col-sm-2 control-label">客户端容量</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="pan4-10" placeholder="请输入客户端容量">
+								</div>
+							</div>
+							<div class="col-md-9 col-md-offset-3">
+								<button type="button" class="btn btn-refash btn-lg">刷新</button>
+								<button type="button" class="btn btn-save btn-lg">保存</button>
+							</div>
+						</form>
+					</div>
+					<!-- ALP配置 结束 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
